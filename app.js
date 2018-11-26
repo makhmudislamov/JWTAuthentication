@@ -10,14 +10,11 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 
-// INDEX
-app.get('/', (req, res) => {
-    res.render('home');
-})
+
 
 const port = process.env.PORT || 3000;
 app.listen(port);
 
-// auth(app); 
+auth(app); 
 
-// module.exports = app;
+module.exports = app;
